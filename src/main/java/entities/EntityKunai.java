@@ -27,36 +27,13 @@ public class EntityKunai extends EntityArrow{
 
 	@Override
 	protected ItemStack getArrowStack() {
-		return null;
+		return new ItemStack(ModItems.item_kunai);
 	}
 	
 	@Override
 	protected void arrowHit(EntityLivingBase living) {
 		super.arrowHit(living);
 	}
-	
-	@Override
-	public void onCollideWithPlayer(EntityPlayer entityIn) 
-	{
-		if (!this.world.isRemote)
-        {
-			entityIn.dropItem(ModItems.item_kunai, 1);
-			this.setDead();
-        }
-
-	}
-	
-	@Override
-	protected void onHit(RayTraceResult raytraceResultIn) {
-		Entity entity = raytraceResultIn.entityHit;
-		if(entity != null && this.shootingEntity != null){
-			if(entity instanceof EntityLivingBase){
-				this.setDead();
-			}
-		}
-		super.onHit(raytraceResultIn);
-	}
-	
 	
 
 }
