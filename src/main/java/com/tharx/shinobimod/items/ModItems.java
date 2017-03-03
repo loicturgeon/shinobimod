@@ -10,16 +10,23 @@ import scala.actors.threadpool.helpers.Utils;
 
 public class ModItems {
 	public static Item item_kunai;
-	public static Item item_explosive_kunai;
+	public static Item item_shuriken;
+	public static Item item_dart;
+  public static Item item_explosive_kunai;
 	
 	public static void InitItems(){
 		item_kunai = new item_kunai();
-		item_explosive_kunai = new item_explosive_kunai();
-	}
+		item_shuriken = new item_shuriken();
+		item_dart = new item_dart();
+    item_explosive_kunai = new item_explosive_kunai();
+  }
 	
 	public static void renderItems(){
 		render(item_kunai);
+		render(item_shuriken);
+		render(item_dart);
 		render(item_explosive_kunai);
+
 	}
 	
 	private static void render(Item item){

@@ -1,0 +1,28 @@
+[
+{
+<<<<<<< HEAD
+  "modid": "shinobi",
+  "name": "Shinobi Mod",
+  "description": "This is a Naruto mod added to Minecraft",
+  "version": "0.0.1",
+  "mcversion": "1.11.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["LoicCristian"],
+  "credits": "Loic and Cristian",
+=======
+  "modid": "shinobimod",
+  "name": "Shinobi mod for Minecraft",
+  "description": "This mod was inspired by the Naruto series.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "www.tharx.com/shinobimod",
+  "updateUrl": "",
+  "authorList": ["Shimimaru", "cricri"],
+  "credits": "",
+>>>>>>> 346a2a7d6765965f27c37bf799922f667aa976f6
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
